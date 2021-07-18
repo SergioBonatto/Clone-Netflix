@@ -1,2 +1,2 @@
 # Clone-Netflix
-![capa](./img/capa git.png)
+![capa](https://github.com/SergioBonatto/Clone-Netflix/blob/main/img/capa%20git.png)
