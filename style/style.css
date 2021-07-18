@@ -12,15 +12,19 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
+}
+
+header .container{
+    margin-top: 7px;
 }
 
 header .logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 header nav a{
@@ -42,14 +46,15 @@ header .container{
 
 /* FILME PRINCIPAL  */
 .filme-principal {
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/capa.png");
-    height: 400px;
+    font-size: 22px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url("../img/capa.png");
+    height: 700px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: -50px;
 }
 
 .filme-principal .descricao {
@@ -59,26 +64,63 @@ header .container{
 
 .filme-principal .titulo {
     margin-top: 15%;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Trebuchet MS', 'Dejavu Sans', "Charlie don't surf!", Arial, sans-serif;
 }
 
-.botao {
-    background-color: rgba(0, 0, 0, 0.5);
+.botaoplay {
+    background-color: white;
     border: none;
-    color: white;
-    padding: 15px 30px;
+    color: black;
+    padding: 10px 30px;
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
-    transition: .3s ease all;
+    transition: .1s ease all;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.botao:hover{
-    background-color: white;
-    color: Black;
+.botaoplay:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+    color:  black;
+}
+
+.botaoinfo {
+    background-color: rgba(169, 169, 169, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .1s ease all;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+
+.botaoinfo:hover{
+    background-color: rgba(169, 169, 169, 0.2);
+    color: white;
 }
 
 .botao i {
     margin-right: 8px;
+}
+
+.container {
+    margin-left: 50px;
+
+}
+
+.filme-principal .container{
+    width: 50%;
+    margin-top: -10%;
+
+}
+
+
+.filme-principal .container .descricao {
+    width: 80%;
 }
