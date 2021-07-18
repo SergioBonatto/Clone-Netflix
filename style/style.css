@@ -78,3 +78,7 @@ header .container{
     background-color: white;
     color: Black;
 }
+
+.botao i {
+    margin-right: 8px;
+}
